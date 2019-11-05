@@ -2,11 +2,21 @@ import React from 'react';
 import TeamMember from '../TeamMember/TeamMember';
 
 const Team = (props) => {
-    return (
-        <div className='team'>
 
-       <h1 className="team-name">{props.teamName}</h1>
-            {
+    const getTeam = (event) => {
+        console.log(props.id);
+       
+    }
+    console.log(props)
+    return (
+        <div
+        
+        className='team'>
+
+       <h1
+       onClick={getTeam}  
+       className="team-name">{props.teamName}</h1>
+            {/* {
               props.members.map((member,i) => {
                   return (
                       <TeamMember
@@ -17,7 +27,7 @@ const Team = (props) => {
                        />
                   )
               })
-            }
+            } */}
         </div>
     );
 }

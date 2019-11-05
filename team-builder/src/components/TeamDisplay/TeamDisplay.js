@@ -1,16 +1,18 @@
 import React from 'react';
-import Team from '../Team/Team';
+import TeamMember from '../TeamMember/TeamMember';
+import './TeamDisplay.css';
 
 
 const TeamDisplay = (props) => {
     return (
         <div className='team-display'>
-            {props.teams.map((team,i) => {
+            {props.team.map((team,i) => {
                 return (
-                    <Team
+                    <TeamMember
                     key={i}
-                    teamName={team.name}
-                    members={team.members} />
+                      name={team.name}
+                      role={team.role}
+                      email={team.email} />
                 )
                 
             })}
