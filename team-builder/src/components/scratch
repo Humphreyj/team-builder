@@ -1,0 +1,9 @@
+team.members.map((member,i) => {
+                    return (
+                        <TeamMember
+                        key={i}
+                        name={member.name}
+                        role={member.role}
+                        email={member.email} />
+                    )
+                })

@@ -1,0 +1,8 @@
+.team-display {
+    width: 48%;
+    margin-left: 2%;
+    padding: 0 3%;
+    height: 40em;
+    border: 1px solid;
+    overflow-y: scroll;
+}
